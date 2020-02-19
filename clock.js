@@ -57,7 +57,7 @@ seconds.onclick = () => {
 vibrate.onclick = () => {
     let hourBeeps = numberToBeeps(now.getHours())
     let minuteBeeps = numberToBeeps(now.getMinutes())
-    hourBeeps.push(between + 2)
+    hourBeeps.push(between * 2)
     let beeps = hourBeeps.concat(minuteBeeps)
     navigator.vibrate(beeps)
 }
