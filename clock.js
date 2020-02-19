@@ -26,14 +26,18 @@ function numberToBeeps(number) {
     let [tens, units] = divmod(number, 10)
     for (let i = 0; i < tens; i++) {
         res.push(long)
-        res.push(between)
+        if (i != (tens - 1)) {
+            res.push(between)
+        }
     }
     if (tens) {
         res.push(between * 2)
     }
     for (let i = 0; i < units; i++) {
         res.push(short)
-        res.push(between)
+        if (i != (units - 1)) {
+            res.push(between)
+        }
     }
     return res
 }
