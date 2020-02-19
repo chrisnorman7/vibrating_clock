@@ -33,6 +33,7 @@ function numberToBeeps(number) {
     }
     for (let i = 0; i < units; i++) {
         res.push(short)
+        res.push(between)
     }
     return res
 }
