@@ -61,3 +61,5 @@ vibrate.onclick = () => {
     let beeps = hourBeeps.concat(minuteBeeps)
     navigator.vibrate(beeps)
 }
+
+document.querySelector("#apple").onclick = () => navigator.vibrate(1000)
