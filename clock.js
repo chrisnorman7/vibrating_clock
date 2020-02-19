@@ -28,7 +28,7 @@ function numberToBeeps(number) {
         res.push(long)
         res.push(between)
     }
-    if (res) {
+    if (tens) {
         res.push(between * 2)
     }
     for (let i = 0; i < units; i++) {
